@@ -2,6 +2,7 @@
 
 This is my own Pet Project called SHOPNO
 It was created to show my skills in Front-End Development
+You can visit it at the link [SHOPNO](https://elbiliardo.github.io/shopno/)
 
 ## Technologies used:
 
