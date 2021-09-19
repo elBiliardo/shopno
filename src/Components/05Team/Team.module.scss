@@ -1,0 +1,20 @@
+@import '../00App/App.module.scss';
+
+$breakPoint1: 1000px;
+$breakPoint2: 640px;
+
+
+.teamBody { padding: 120px 0; }
+.teamMembers {
+	margin-top: 120px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media(max-width: $breakPoint1) {
+	.teamBody { padding: 70px 0; }
+	.teamMembers {
+		justify-content: center;
+	}
+}

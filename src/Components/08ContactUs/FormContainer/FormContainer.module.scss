@@ -1,0 +1,162 @@
+@import '../ContactUs.module.scss';
+
+$breakPoint2: 500px;
+
+.contactFormContainer {
+	max-width: 615px;
+	width: 100%;
+	padding: 15px 30px 40px;
+	background-color: rgba(2, 22, 35, 0.7);
+	box-shadow: 0px 0px 30px 0px rgba(21,21,21,0.11);
+	position: relative;
+	overflow: hidden;
+
+	.inputItem {
+		position: relative;
+		.inputContiner {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 25px;
+			label {
+				white-space: nowrap;
+			}
+			label, input, textarea {
+				line-height: 22px;
+				opacity: 0.6;
+				font-family: 'Raleway', sans-serif;
+				font-size: 15px;
+				color: #ffffff;
+			}
+			input, textarea {
+				width: calc(100% - 80px);
+				opacity: 1;
+				background-color: inherit;
+			}
+			textarea {
+				height: 90px;
+				resize: none;
+				padding-right: 10px;
+				&::-webkit-scrollbar-track {
+					-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+					border-radius: 50px;
+				}
+				&::-webkit-scrollbar {
+					width: 5px;
+				}
+				&::-webkit-scrollbar-thumb {
+					border-radius: 50px;
+					background-color: rgba(255, 255, 255, 0.3);
+				}
+			}
+			label[for='message'] {
+				line-height: 24px;
+			}
+		}
+		.errorMessage {
+			position: absolute;
+			bottom: 3px;
+			opacity: 0.9;
+			font-family: 'Raleway', sans-serif;
+			font-size: 15px;
+			color: #ef5350;
+		}
+		hr {
+			margin-top: 20px;
+			width: 100%;
+			height: 1px;
+			background-color: rgba(255, 255, 255, 0.3);
+		}
+	}
+
+	.submitBtn {
+		margin-top: 35px;
+		padding: 16px 37px;
+		background-color: #6eeee4;
+		opacity: 1;
+		border-radius: 2px;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		letter-spacing: 0.12em;
+		color: rgba(0, 0, 0, 0.7);
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.popupContainer {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 10px;
+		right: 10px;
+		bottom: 0;
+		max-width: 400px;
+		max-height: 300px;
+		margin: -300px auto 0;
+		transition: all 0.3s ease 0s;
+		&.animPopup {
+			margin-top: 70px;
+		}
+		background-color: #f0fafd;
+		border-radius: 5px;
+		padding: 30px;
+		text-align: center;
+		.checkCircle {
+			font-size: 70px;
+			color: #43a047;
+		}
+		h5 {
+			margin-top: 10px;
+			font-family: 'Raleway', sans-serif;
+			font-size: 30px;
+		}
+		p {
+			line-height: 26px;
+			font-family: 'Raleway', sans-serif;
+			margin: 20px auto 0;
+			font-size: 18px;
+		}
+		button {
+			font-family: 'Raleway', sans-serif;
+			margin-top: 30px;
+			background-color: #6eeee4;
+			padding: 10px 20px;
+			font-size: 18px;
+			border-radius: 5px;
+		}
+	}
+
+	.popupBg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.65);
+		z-index: 1;
+	}
+}
+
+@media(max-width: $breakPoint1) {
+	.contactFormContainer {
+		margin: 0 auto;
+	}
+}
+
+@media(max-width: $breakPoint2) {
+	.contactFormContainer {
+		padding-left: 10px;
+		padding-right: 10px;
+		.popupContainer {
+			max-height: 350px;
+			margin: -350px auto 0;
+		}
+		.submitBtn {
+			padding: 10px 20px;
+			font-size: 15px;
+		}
+	}
+
+}

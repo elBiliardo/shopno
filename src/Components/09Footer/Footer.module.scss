@@ -1,0 +1,54 @@
+@import '../00App/App.module.scss';
+
+$breakPoint1: 1000px;
+
+.footer {background-color: #262b2e;}
+.footerBody {
+	padding: 70px 0;
+	text-align: center;
+	h5 {
+		opacity: 0.8;
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		line-height: 25px;
+		font-weight: 400;
+		letter-spacing: 0.01em;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+	.footerSocial {
+		margin-top: 20px;
+		a {
+			margin: 0 3.5px;
+			button {
+				width: 46px;
+				height: 40px;
+				opacity: 0.19;
+				background-color: #393d3f;
+				opacity: 0.48;
+				font-size: 22px;
+				color: #faf4f4;
+				&:hover {
+					background-color: #71f6eb;
+					opacity: 0.91;
+					color: #000000;
+				}
+			}
+		}
+	}
+	p {
+		margin-top: 40px;
+		opacity: 0.4;
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		line-height: 25px;
+		font-weight: 500;
+		letter-spacing: 0.01em;
+		color: #ffffff;
+	}
+}
+
+@media(max-width: $breakPoint1) {
+	.footerBody { padding: 50px 0;}
+}
+

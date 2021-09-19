@@ -1,0 +1,12 @@
+@import '../00App//App.module.scss';
+
+$breakPoint1: 1110px;
+$breakPoint2: 410px;
+
+
+.partners { background-color: #f9fbfb; }
+.partnersBody { padding: 120px 0 220px; }
+
+@media(max-width: $breakPoint1) {
+	.partnersBody { padding: 70px 0; }
+}

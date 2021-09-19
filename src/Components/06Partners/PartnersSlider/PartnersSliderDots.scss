@@ -1,0 +1,30 @@
+@import '../Partners.module.scss';
+
+
+.dotsListPartners {
+	bottom: -45px;
+	li {
+		width: auto;
+		height: auto;
+		margin: 0 1.5px;
+		.dotItemPartners {
+			width: 12px;
+			height: 12px;
+			background-color: #d0d0d0;
+			border-radius: 3px;
+		}
+		&.slick-active {
+			.dotItemPartners {
+				background-color: #71f6eb;
+			}
+		}
+	}
+}
+
+@media(max-width: $breakPoint1) {
+	.dotsListPartners {
+		li {
+			margin: 0 4px;
+		}
+	}
+}

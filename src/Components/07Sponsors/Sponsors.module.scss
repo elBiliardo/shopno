@@ -1,0 +1,28 @@
+@import '../00App/App.module.scss';
+
+$breakPoint1: 830px;
+$breakPoint2: 560px;
+
+
+.sponsors { padding: 110px 0; }
+.sponsorsBody {
+	max-width: 1100px;
+	margin: 0 auto;
+	height: 170px;
+	overflow: hidden;
+	img { 
+		width: 100%; 
+		height: 100%;
+	}
+}
+
+@media(max-width: $breakPoint1) {
+	.sponsors { padding: 70px 0; }
+	.sponsorsBody { 
+		height: 120px; 
+		img { object-fit: cover; }
+	}
+}
+@media(max-width: $breakPoint2) {
+	.sponsorsBody { height: 100px;}
+}

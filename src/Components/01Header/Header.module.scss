@@ -1,0 +1,92 @@
+@import '../00App/App.module.scss';
+
+$breakPoint1: 900px;
+$breakPoint2: 570px;
+
+.header { background-color: #eff0f2; }
+
+.headerBody {
+	padding: 54px 0 196px;
+	background-image: url('./img/glass.png');
+	background-repeat: no-repeat;
+	background-position: 982px 574px;
+	@media(max-width: 1100px) {
+		& { background-image: none; }
+	}
+
+	.mainTitle {
+		margin-top: 185px;
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 45px;
+		line-height: 55px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		text-shadow: 4px 8px 10px rgba(0,0,0,0.23);
+		color: #505050;
+		span {
+			margin: 0;
+			padding: 0 10px;
+			background-color: #b2f2ee;
+		}
+	}
+
+	.contactBtn {
+		display: block;
+		margin: 140px auto 0;
+		width: 232px;
+		height: 53px;
+		border: 2px solid #000000;
+		border-radius: 2px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: #000000;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			background-color: #b2f2ee;
+			transition: all .5s;
+			z-index: -1;
+		}
+		&:hover, &:focus {
+			&:before { width: 100%; }
+		}
+	}
+
+	@media(max-width: $breakPoint1) {
+		& { padding: 0 0 120px; }
+		.mainTitle { 
+			margin-top: 130px;
+			font-size: 35px;
+		}
+		.contactBtn {
+			margin-top: 110px;
+		}
+	}
+
+	@media(max-width: $breakPoint2) {
+		& { padding-bottom: 80px; }
+		.mainTitle { 
+			margin-top: 100px;
+			font-size: 30px;
+			line-height: 50px;
+		}
+		.contactBtn {
+			font-size: 15px;
+			width: 180px;
+			height: 50px;
+			margin-top: 90px;
+		}
+	}
+}
+

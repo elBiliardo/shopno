@@ -1,0 +1,23 @@
+@import '../00App/App.module.scss';
+
+$breakPoint1: 1200px;
+$breakPoint2: 500px;
+
+.contactUs {
+	background: linear-gradient(rgba(248, 250, 251, 1), 
+	rgba(248, 250, 251, 0.6)), url('./img/contactUsBg.jpg') center / cover no-repeat ;
+}
+
+.contactUsBody {
+	padding: 120px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media(max-width: $breakPoint1) {
+	.contactUsBody {
+		display: block;
+		padding: 70px 0;
+	}
+}

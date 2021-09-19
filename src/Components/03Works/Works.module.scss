@@ -1,0 +1,9 @@
+@import '../00App/App.module.scss';
+
+$breakPoint1: 775px;
+
+.worksBody { padding: 130px 0 125px; }
+
+@media(max-width: $breakPoint1) {
+	.worksBody { padding: 70px 0; }
+}

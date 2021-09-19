@@ -1,0 +1,20 @@
+@import '../00App//App.module.scss';
+
+$breakPoint1: 900px;
+$breakPoint2: 460px;
+
+.services { background-color: #f9fbfb; }
+.servicesBody { padding: 125px 0; }
+.serviceItems {
+	margin-top: 123px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media(max-width: $breakPoint1) {
+	.servicesBody { padding: 70px 0; }
+	.serviceItems {
+		display: block;
+	}
+}

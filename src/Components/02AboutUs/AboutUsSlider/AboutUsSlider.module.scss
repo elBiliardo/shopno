@@ -1,0 +1,38 @@
+@import '../AboutUs.module.scss';
+
+.aboutUsSliderContainer {
+	min-height: 0px; 
+	min-width: 0px;
+	max-width: 480px;
+	width: 100%;
+	height: 412px;
+	background-color: #eff0f2;
+	position: relative;
+	.aboutUsSlider {
+		position: absolute;
+		top: -35px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		max-width: 390px;
+		width: 100%;
+		line-height: 0;
+		.slideItem {
+			img { width: 100%; }
+		}
+	}
+}
+
+@media(max-width: $breakPoint1) {
+	.aboutUsSliderContainer {
+		margin: 100px auto 0;
+	}
+}
+
+@media(max-width: $breakPoint2) {
+	.aboutUsSliderContainer {
+		height: 320px;
+		.aboutUsSlider {
+			max-width: 320px;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+@import '../Works.module.scss';
+
+.worksGallery {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 122px;
+	a {
+		max-width: 370px;
+		width: calc(33.33% - 15px);
+		margin-bottom: 13px;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@media(max-width: $breakPoint1) {
+	.worksGallery {
+		margin-top: 45px;
+		a {
+			width: 50%;
+			margin-bottom: 0;
+		}
+	}
+}

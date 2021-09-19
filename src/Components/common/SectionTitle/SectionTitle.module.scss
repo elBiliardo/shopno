@@ -1,0 +1,28 @@
+.sectionTitle { 
+	margin: 0 0 17px;
+	text-align: center;
+	opacity: 0.9;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 38px;
+	line-height: 28px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: #000000;
+	@media(max-width: 425px) {
+		font-size: 32px;
+	}
+}
+
+.sectionSubTitle { 
+	text-align: center;
+	opacity: 0.61;
+	font-size: 18px;
+	line-height: 28px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: #000000;
+	@media(max-width: 425px) {
+		font-size: 16px;
+	}
+}
