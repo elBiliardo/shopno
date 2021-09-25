@@ -1,9 +1,6 @@
 @import '../AboutUs.module.scss';
 
 .aboutUsSliderContainer {
-	.AAA:focus {
-		border: 1px black solid;
-	}
 	min-height: 0px; 
 	min-width: 0px;
 	max-width: 480px;
@@ -11,9 +8,6 @@
 	height: 412px;
 	background-color: #eff0f2;
 	position: relative;
-	&:focus {
-		border: 1px black solid;
-	}
 	.aboutUsSlider {
 		position: absolute;
 		top: -35px;
